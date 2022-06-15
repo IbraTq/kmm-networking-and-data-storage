@@ -28,6 +28,7 @@ class LaunchesRvAdapter(var launches: List<RocketLaunch>) : RecyclerView.Adapter
         private val launchSuccessTextView = itemView.findViewById<TextView>(R.id.launchSuccess)
         private val missionDetailsTextView = itemView.findViewById<TextView>(R.id.details)
 
+
         fun bindData(launch: RocketLaunch) {
             val ctx = itemView.context
             missionNameTextView.text = ctx.getString(R.string.mission_name_field, launch.missionName)
